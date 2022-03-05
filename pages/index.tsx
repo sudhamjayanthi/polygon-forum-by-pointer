@@ -5,6 +5,11 @@ import { ChakraProvider, Box, Heading } from "@chakra-ui/react";
 import { Toaster, toast } from "react-hot-toast";
 import theme from "../theme";
 
+import { Provider as WagmiProvider } from "wagmi"
+import { providers } from "ethers"
+
+const provider = providers.getDefaultProvider()
+
 // Create a react-query client
 const queryClient = new QueryClient({
   defaultOptions: {

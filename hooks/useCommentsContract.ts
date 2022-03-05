@@ -31,7 +31,7 @@ const useCommentsContract = () => {
 	// We also pass in the signer if there is a signed in wallet, or if there's
 	// no signed in wallet then we'll pass in the connected provider.
 	const contract = wagmi.useContract({
-		addressOrName: "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+		addressOrName: "0x3810Ff4a012bEDf71942975D113C7E5B5e0cF87E",
 		contractInterface: CommentsContract.abi,
 		signerOrProvider: signer.data || provider
 	})
